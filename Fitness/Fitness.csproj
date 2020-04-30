@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +36,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +57,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeClient.Designer.cs">
+      <DependentUpon>ChangeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeTrener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeTrener.Designer.cs">
+      <DependentUpon>ChangeTrener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassCancel.Designer.cs">
+      <DependentUpon>ClassCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientSchedule.Designer.cs">
+      <DependentUpon>ClientSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerSchedule.Designer.cs">
+      <DependentUpon>ManagerSchedule.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationClient.Designer.cs">
+      <DependentUpon>RegistrationClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartTablecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartTablecs.Designer.cs">
+      <DependentUpon>StartTablecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistics.Designer.cs">
+      <DependentUpon>statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrenerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrenerRegistration.Designer.cs">
+      <DependentUpon>TrenerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrenerSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrenerSchedule.Designer.cs">
+      <DependentUpon>TrenerSchedule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeClient.resx">
+      <DependentUpon>ChangeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeTrener.resx">
+      <DependentUpon>ChangeTrener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassCancel.resx">
+      <DependentUpon>ClassCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSchedule.resx">
+      <DependentUpon>ClientSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerSchedule.resx">
+      <DependentUpon>ManagerSchedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +166,28 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrationClient.resx">
+      <DependentUpon>RegistrationClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartTablecs.resx">
+      <DependentUpon>StartTablecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistics.resx">
+      <DependentUpon>statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Support.resx">
+      <DependentUpon>Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrenerRegistration.resx">
+      <DependentUpon>TrenerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrenerSchedule.resx">
+      <DependentUpon>TrenerSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,5 +201,78 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clients.png" />
+    <Content Include="images\bag.png" />
+    <Content Include="images\clients.png" />
+    <Content Include="images\icons8-facebook-24.png" />
+    <Content Include="images\icons8-facebook-48.png" />
+    <Content Include="images\icons8-instagram-24.png" />
+    <Content Include="images\icons8-instagram-48.png" />
+    <Content Include="images\icons8-вконтакте-24.png" />
+    <Content Include="images\icons8-вконтакте-48.png" />
+    <Content Include="images\icons8-войти-52 %281%29.png" />
+    <Content Include="images\icons8-войти-52.png" />
+    <Content Include="images\icons8-выключение-системы-48.png" />
+    <Content Include="images\icons8-выключение-системы-64.png" />
+    <Content Include="images\icons8-выход-52.png" />
+    <Content Include="images\icons8-карта-сотрудник-30.png" />
+    <Content Include="images\icons8-конфиденциальность-90.png" />
+    <Content Include="images\icons8-медитация-гуру-100.png" />
+    <Content Include="images\icons8-онлайн-поддержка-60.png" />
+    <Content Include="images\icons8-пользователь-90.png" />
+    <Content Include="images\icons8-портфель-30.png" />
+    <Content Include="images\icons8-шаблон-резюме-24.png" />
+    <Content Include="images\icons8-шаблон-резюме-48.png" />
+    <Content Include="images\locker.png" />
+    <Content Include="images\treners.png" />
+    <Content Include="images\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
 </Project>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Fitness.AboutUs" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAARAAAACAAAACAAAAAAAAQAAAAQAAAAA=</HashCode>
+      <FileName>AboutUs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.ChangeClient" Collapsed="true">
+    <Position X="10" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQDAAIAAQSUQAAAAAQiCIAAKBgBAAIQCGABAAwAEAQQ=</HashCode>
+      <FileName>ChangeClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.ChangeTrener" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAIAAQCQQABAAAQiCIAAKAABAgIQCGAIAAwAEAAQ=</HashCode>
+      <FileName>ChangeTrener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.ClassCancel" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>ClassCancel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.ClientSchedule" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ETAQIhKAVDAUAVAAAIDAYDICIyoIcAIAWkFgAwBAAAA=</HashCode>
+      <FileName>ClientSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.LoginForm" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGQKIAQCUCAAABAAAICAAAAKACAAAAAAEoSAAgDBAAA=</HashCode>
+      <FileName>LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.ManagerSchedule" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EbAYMhKgFDKUARESBwTB4HZKMX45gAZE0CIhE2HACtI=</HashCode>
+      <FileName>ManagerSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.RegistrationClient" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQjAAIAAQSUQAAAAAACAIAAKBABIAIAAGkBAAwAEAAQ=</HashCode>
+      <FileName>RegistrationClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.StartTablecs" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQIhIAkCAQAVACAAGAQCACISgwAAIAECAgAQBAAAA=</HashCode>
+      <FileName>StartTablecs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.statistics" Collapsed="true">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABAAACAAABKAAACFYABKBAQgAIgAEgAAIQBEAMA=</HashCode>
+      <FileName>statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.Support" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Support.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.TrenerRegistration" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQjAAIBAQCASAAAAAACAIAAKAABAgIAAGgAAAwAEAAQ=</HashCode>
+      <FileName>TrenerRegistration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fitness.TrenerSchedule" Collapsed="true">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EaAQIhYgVCIUAROAAADAYDIKMTwYAABAWAAgEyFAAsE=</HashCode>
+      <FileName>TrenerSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
